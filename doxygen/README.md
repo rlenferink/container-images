@@ -3,7 +3,7 @@
 ## Use existing container image
 
 ```bash
-[project_dir]$ podman run -it --rm -v ~/project_dir/:/data -w /data ghcr.io/rlenferink/doxygen:1.0.0
+$ podman run -it --rm -v ~/project_dir/:/data -w /data ghcr.io/rlenferink/doxygen:1.0.0
 root@e68e0ef79a46:/data# doxygen Doxyfile 
 Searching for include files...
 Searching for example files...
@@ -15,7 +15,7 @@ Searching for files to exclude
 Searching INPUT for files to process...
 .... <snip> ...
 root@e68e0ef79a46:/data# exit
-[project_dir]$
+$
 ```
 
 The doxygen documentation for your project is now generated and available on your host system.
