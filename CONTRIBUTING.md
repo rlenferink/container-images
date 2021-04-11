@@ -20,5 +20,7 @@ Update images using:
 $ echo $PERSONAL_ACCESS_TOKEN | podman login ghcr.io --username gh_username --password-stdin
 $ podman tag app ghcr.io/rlenferink/app:1.0.0
 $ podman push ghcr.io/rlenferink/app:1.0.0
+# Update the image README with the correct version
+# Tag the commit with <image>-<version>
 ```
 
